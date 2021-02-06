@@ -1,0 +1,7 @@
+bind status D !@?rm %(file)
+bind status C !git commit
+bind stage 1 stage-update-line
+bind status a !?git commit --amend
+bind main T !@git tag %(prompt) %(commit)
+bind status P !git push origin
+bind status I @sh -c "dirname %(file) >> .gitignore"
