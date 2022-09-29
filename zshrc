@@ -14,23 +14,16 @@ done
 
 compinit -C
 
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# Theme
 ZSH_THEME="agnoster"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-
-eval $(thefuck --alias)
+# Plugins
+plugins=(
+  git
+)
 
 source $ZSH/oh-my-zsh.sh
 
-# export NVM_DIR="$HOME/.nvm"
-# . "/usr/local/opt/nvm/nvm.sh"
-export NVM_DIR="$HOME/.nvm"
-. "$HOME/.nvm/nvm.sh"
 
 # User configuration
 LANG=en_US.UTF-8
@@ -38,30 +31,26 @@ LANG=en_US.UTF-8
 # Hide username
 prompt_context() {}
 
-# Functions
+# Add date to prompt with color (turned off for now since it doesn't work with 'fix')
+# autoload -U colors && colors
+# RPROMPT="%{$fg[green]%}[%D{%k:%M:%S}]%{$reset_color%}"
 
-function awsp () {
+# --- ADD-ONS ---
+eval $(thefuck --alias)
 
-    arg="$1"
-    PROFILE="jayway"
-    DEFAULT_PROFILE="jayway"
-    case $arg in
-        --ordna|-o)
-        PROFILE="ordna"
-        DEFAULT_PROFILE="ordna"
-        ;;
-        *)
-        # Unknown
-        ;;
-    esac
-    export AWS_PROFILE="$PROFILE"
-    export AWS_DEFAULT_PROFILE="$DEFAULT_PROFILE"
-    echo "AWS_PROFILE set to $PROFILE and AWS_DEFAULT_PROFILE set to $DEFAULT_PROFILE"
-}
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# So zsh can find and use yarn as a command
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 alias fix="fuck"
 alias megaprune="git fetch && git remote update origin --prune && git branch -vv | grep ': gone]' | cut -f 3 -d ' ' | xargs git branch -D"
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+alias reload="exec $SHELL -l" # Reload the shell
+
+# Ordna/Kompis
+alias kompis="cd ~/Desktop/dev/ordna/CBF-RE-IPEX-KOMPIS"
 
 # For testing startup performance, enable this line and the line at the top of this file
 # zprof # bottom of .zshrc
