@@ -16,6 +16,9 @@ plugins=(
 # User configuration
 LANG=en_US.UTF-8
 
+source $HOME/.aliases
+source $HOME/.git-aliases
+
 # --- ADD-ONS ---
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
