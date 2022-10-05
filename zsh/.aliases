@@ -6,3 +6,6 @@ alias megaprune="git fetch && git remote update origin --prune && git branch -vv
 # Ordna/Kompis
 alias kompis="cd /Users/filipbontin/repos/ordna/CBF-RE-IPEX-KOMPIS"
 
+# Exa
+alias ls="exa -lah --grid"
+
