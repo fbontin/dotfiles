@@ -3,3 +3,8 @@
   email = fbontin@users.noreply.github.com
 [pull]
   rebase = true
+[alias]
+  s = status -s
+  fwl = push --force-with-lease
+  cane = commit --amend --no-edit
+

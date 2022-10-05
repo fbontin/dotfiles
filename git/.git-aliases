@@ -1,4 +1,0 @@
-alias s="status -s"
-alias fwl="push --force-with-lease"
-alias cane="commit --amend --no-edit"
-

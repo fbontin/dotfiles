@@ -17,7 +17,6 @@ plugins=(
 LANG=en_US.UTF-8
 
 source $HOME/.aliases
-source $HOME/.git-aliases
 
 # --- ADD-ONS ---
 
