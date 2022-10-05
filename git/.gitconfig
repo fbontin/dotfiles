@@ -1,0 +1,5 @@
+[user]
+  name = Filip Bontin
+  email = fbontin@users.noreply.github.com
+[pull]
+  rebase = true
