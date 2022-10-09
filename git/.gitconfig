@@ -10,3 +10,5 @@
   fwl = push --force-with-lease
   cane = commit --amend --no-edit
 
+[init]
+  defaultBranch = main
