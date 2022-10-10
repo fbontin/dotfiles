@@ -9,4 +9,8 @@ brew "exa"
 brew "neovim" 
 brew "stow"
 
+# used by telescope in nvim
+brew "ripgrep" 
+brew "fd"
+
 cask "kitty"
