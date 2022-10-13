@@ -4,8 +4,9 @@ if not status_ok then
 end
 
 configs.setup {
-  ensure_installed = {"lua", "css", "gitignore", "http", "javascript", "jsdoc", "json", "make", "markdown", "python", "regex", "rust", "tsx", "typescript", "yaml" }, 
-  sync_install = false, 
+  ensure_installed = { "lua", "css", "gitignore", "http", "javascript", "jsdoc", "json", "make", "markdown", "python",
+    "regex", "rust", "tsx", "typescript", "yaml" },
+  sync_install = false,
   ignore_install = {}, -- List of parsers to ignore installing
   autopairs = {
     enable = true
