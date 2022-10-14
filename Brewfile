@@ -13,4 +13,7 @@ brew "stow"
 brew "ripgrep" 
 brew "fd"
 
+# used for formatting lua
+brew "stylua"
+
 cask "kitty"
