@@ -3,7 +3,7 @@ if not status_ok then
   return
 end
 
-bufferline.setup {
+bufferline.setup({
   options = {
     numbers = "none", -- | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
     close_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
@@ -14,7 +14,7 @@ bufferline.setup {
     -- and so changing this is NOT recommended, this is intended
     -- as an escape hatch for people who cannot bear it for whatever reason
     indicator = {
-      style = 'underline',
+      style = "underline",
     },
     buffer_close_icon = "",
     -- buffer_close_icon = '',
@@ -166,4 +166,4 @@ bufferline.setup {
       bg = { attribute = "bg", highlight = "Normal" },
     },
   },
-}
+})
