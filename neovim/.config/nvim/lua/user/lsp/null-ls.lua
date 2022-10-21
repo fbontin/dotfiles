@@ -17,7 +17,7 @@ null_ls.setup({
     formatting.stylua,
     diagnostics.eslint_d,
     formatting.eslint_d,
-    formatting.prettierd.with({
+    formatting.prettier.with({
       env = {
         PRETTIERD_LOCAL_PRETTIER_ONLY = 1,
       },
