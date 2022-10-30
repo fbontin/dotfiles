@@ -1,0 +1,17 @@
+layouts:
+    - tall
+    - fullscreen
+    - bsp
+
+mod1:
+    - option
+    - shift
+mod2:
+    - option
+    - shift
+    - control
+
+window-margins: false
+
+# stop some windows from being effected by amethyst
+floating: ["com.apple.systempreferences"]

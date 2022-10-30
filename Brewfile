@@ -17,3 +17,6 @@ brew "fd"
 brew "stylua"
 
 cask "kitty"
+
+# window manager
+cask "amethyst"
