@@ -1,7 +1,6 @@
 layouts:
     - tall
     - fullscreen
-    - bsp
 
 mod1:
     - option
