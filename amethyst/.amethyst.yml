@@ -13,4 +13,4 @@ mod2:
 window-margins: false
 
 # stop some windows from being effected by amethyst
-floating: ["com.apple.systempreferences"]
+floating: ["com.apple.systempreferences", "com.microsoft.teams"]
