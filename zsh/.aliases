@@ -9,6 +9,9 @@ alias kompis="cd /Users/filipbontin/repos/ordna/CBF-RE-IPEX-KOMPIS"
 # Exa
 alias ls="exa -ah --icons"
 
+# Cat/bat
+alias cat="bat"
+
 # cd
 alias ..="cd .."
 alias ...="cd ../.."

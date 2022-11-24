@@ -6,6 +6,7 @@ brew "git"
 brew "jq"
 brew "tig"
 brew "exa"
+brew "bat"
 brew "neovim" 
 brew "stow"
 
