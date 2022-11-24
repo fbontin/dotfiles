@@ -8,6 +8,11 @@ if not scrollbar_status_ok then
   return
 end
 
+local scrollbar_gitsigns_status_ok, scrollbar_gitsigns = pcall(require, "scrollbar.handlers.gitsigns")
+if not scrollbar_gitsigns_status_ok then
+  return
+end
+
 scrollbar.setup({
   handle = {
     color = colors.bg_highlight,
@@ -21,3 +26,5 @@ scrollbar.setup({
     Misc = { color = colors.purple },
   },
 })
+
+scrollbar_gitsigns.setup()
