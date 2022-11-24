@@ -11,6 +11,8 @@ autoload -Uz compinit && compinit
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 # Suggestions 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# "Fuzzy" cd
+zstyle ':completion:*' matcher-list 'r:[[:ascii:]]||[[:ascii:]]=** r:|=* m:{a-z\-}={A-Z\_}'
 
 # Plugins
 plugins=(
