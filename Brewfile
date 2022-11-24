@@ -11,6 +11,7 @@ brew "stow"
 
 # zsh
 brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
 
 # used by telescope in nvim
 brew "ripgrep" 
