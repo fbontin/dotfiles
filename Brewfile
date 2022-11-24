@@ -9,6 +9,9 @@ brew "exa"
 brew "neovim" 
 brew "stow"
 
+# zsh
+brew "zsh-autosuggestions"
+
 # used by telescope in nvim
 brew "ripgrep" 
 brew "fd"

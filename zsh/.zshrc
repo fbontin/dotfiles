@@ -9,6 +9,8 @@ autoload -Uz compinit && compinit
 
 # Theme
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+# Suggestions 
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Plugins
 plugins=(
