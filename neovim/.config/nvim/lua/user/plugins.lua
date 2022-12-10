@@ -87,7 +87,7 @@ return packer.startup(function(use)
   use("lewis6991/gitsigns.nvim")
 
   -- Colorscheme
-  use("folke/tokyonight.nvim")
+  use("nyoom-engineering/oxocarbon.nvim")
 
   -- Scrollbar
   use("petertriho/nvim-scrollbar")
