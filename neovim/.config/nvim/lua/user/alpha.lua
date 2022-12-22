@@ -7,7 +7,7 @@ local dashboard = require("alpha.themes.dashboard")
 
 local header = {
   type = "text",
-  val = require("user.alpha-art")["girl_with_pearl_earring"],
+  val = require("user.alpha-art")["pikachu"],
   opts = {
     position = "center",
     hl = "String",
