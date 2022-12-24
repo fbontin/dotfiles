@@ -25,8 +25,6 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
-
 -- Remove highlights
 keymap("n", "<Esc>", ":nohl<cr>", opts)
 
@@ -41,9 +39,13 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<S-q>", ":Bdelete!<CR>", opts)
 
--- Insert --
--- Press jk fast to enter
--- keymap("i", "jk", "<ESC>", opts)
+-- Center ctrl+d and ctrl-u vertically
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- Center searches (after going to next)
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
 
 -- Visual --
 -- Stay in indent mode
