@@ -42,7 +42,4 @@ return {
 
   -- Colorscheme
   "nyoom-engineering/oxocarbon.nvim",
-
-  -- Scrollbar
-  "petertriho/nvim-scrollbar",
 }
