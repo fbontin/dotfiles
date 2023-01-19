@@ -39,7 +39,4 @@ return {
 
   -- Git
   "lewis6991/gitsigns.nvim",
-
-  -- Colorscheme
-  "nyoom-engineering/oxocarbon.nvim",
 }
