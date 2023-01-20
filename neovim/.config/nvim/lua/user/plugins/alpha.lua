@@ -36,7 +36,6 @@ return {
         buttons,
       },
     }
-    print("alpha woo 222")
 
     require("alpha").setup(config)
   end,
