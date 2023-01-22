@@ -1,7 +1,6 @@
 return {
   "nvim-lua/plenary.nvim", -- Useful lua functions used ny lots of plugins
   "windwp/nvim-autopairs", -- Autopairs, integrates with both cmp and treesitter
-  "numToStr/Comment.nvim", -- Easily comment stuff
 
   -- cmp plugins
   "hrsh7th/nvim-cmp", -- The completion plugin
@@ -30,5 +29,4 @@ return {
   -- Treesitter
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
   "p00f/nvim-ts-rainbow",
-  "JoosepAlviste/nvim-ts-context-commentstring",
 }

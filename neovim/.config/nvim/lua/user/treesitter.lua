@@ -40,7 +40,7 @@ configs.setup({
     -- colors = {}, -- table of hex strings
     -- termcolors = {} -- table of colour name strings
   },
-  context_commentstring = {
+  context_commentstring = { -- needed for nvim-ts-context-commentstring
     enable = true,
     enable_autocmd = false,
   },
