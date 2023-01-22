@@ -34,7 +34,4 @@ return {
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
   "p00f/nvim-ts-rainbow",
   "JoosepAlviste/nvim-ts-context-commentstring",
-
-  -- Git
-  "lewis6991/gitsigns.nvim",
 }
