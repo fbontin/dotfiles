@@ -12,8 +12,6 @@ return {
   "saadparwaiz1/cmp_luasnip", -- snippet completions
   "hrsh7th/cmp-nvim-lsp",
   "hrsh7th/cmp-nvim-lua",
-  "akinsho/bufferline.nvim",
-  "moll/vim-bbye",
 
   -- snippets
   "L3MON4D3/LuaSnip", --snippet engine
