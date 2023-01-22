@@ -2,11 +2,15 @@ return {
   "goolord/alpha-nvim",
   dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
+    local alpha = require("alpha")
     local dashboard = require("alpha.themes.dashboard")
+    require("alpha.term")
 
     local header = {
-      type = "text",
-      val = require("user.alpha-art")["pikachu"],
+      type = "terminal",
+      command = "cat | " .. os.getenv("HOME") .. "/.config/nvim/lua/user/alpha/starry_night.sh",
+      width = 64,
+      height = 20,
       opts = {
         position = "center",
         hl = "String",
@@ -32,11 +36,12 @@ return {
       layout = {
         { type = "padding", val = top_padding },
         header,
+        { type = "padding", val = 14 },
         { type = "padding", val = 2 },
         buttons,
       },
     }
 
-    require("alpha").setup(config)
+    alpha.setup(config)
   end,
 }
