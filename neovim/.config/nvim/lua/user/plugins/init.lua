@@ -1,6 +1,4 @@
 return {
-  "windwp/nvim-autopairs", -- Autopairs, integrates with both cmp and treesitter
-
   -- cmp plugins
   "hrsh7th/nvim-cmp", -- The completion plugin
   "hrsh7th/cmp-buffer", -- buffer completions
