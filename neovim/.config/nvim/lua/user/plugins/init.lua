@@ -23,6 +23,6 @@ return {
   "jose-elias-alvarez/typescript.nvim", -- for ts commands
 
   -- Treesitter
-  { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+  { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" },
   "p00f/nvim-ts-rainbow",
 }
