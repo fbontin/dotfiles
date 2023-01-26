@@ -21,8 +21,4 @@ return {
   "jose-elias-alvarez/null-ls.nvim", -- for formatters and linters
   "tpope/vim-sleuth", -- fixes errors from .editorconfig, e.g. in Kompis
   "jose-elias-alvarez/typescript.nvim", -- for ts commands
-
-  -- Treesitter
-  { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" },
-  "p00f/nvim-ts-rainbow",
 }
