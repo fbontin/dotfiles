@@ -23,9 +23,6 @@ return {
   "tpope/vim-sleuth", -- fixes errors from .editorconfig, e.g. in Kompis
   "jose-elias-alvarez/typescript.nvim", -- for ts commands
 
-  -- Telescope
-  "nvim-telescope/telescope.nvim",
-
   -- Treesitter
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
   "p00f/nvim-ts-rainbow",
