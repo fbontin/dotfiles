@@ -17,5 +17,4 @@ require("user.options")
 
 require("lazy").setup("user.plugins")
 
-require("user.cmp")
 require("user.lsp")
