@@ -1,7 +1,4 @@
 return {
-  -- snippets
-  "rafamadriz/friendly-snippets", -- a bunch of snippets to use
-
   -- LSP
   "neovim/nvim-lspconfig", -- enable LSP
   "williamboman/mason.nvim",
