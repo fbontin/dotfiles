@@ -5,6 +5,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     "jose-elias-alvarez/typescript.nvim", -- for ts commands
   },
+  event = "VeryLazy",
   config = function()
     local lspconfig = require("lspconfig")
     local mason_lspconfig = require("mason-lspconfig")

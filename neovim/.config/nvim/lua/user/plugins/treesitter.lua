@@ -2,6 +2,7 @@ return {
   "nvim-treesitter/nvim-treesitter",
   run = ":TSUpdate",
   dependencies = { "p00f/nvim-ts-rainbow" },
+  event = "VeryLazy",
   config = function()
     require("nvim-treesitter.configs").setup({
       ensure_installed = {

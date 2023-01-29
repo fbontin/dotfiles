@@ -3,6 +3,7 @@ return {
   dependencies = {
     "moll/vim-bbye",
   },
+  event = "VeryLazy",
   config = function()
     require("bufferline").setup({
       options = {
