@@ -1,0 +1,1 @@
+bind status d @sh -c "rm '%(file)'" # remove current file in status view
