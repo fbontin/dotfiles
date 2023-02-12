@@ -6,11 +6,6 @@ return {
   config = function()
     require("nvim-tree").setup({
       disable_netrw = true,
-      ignore_ft_on_setup = {
-        "startify",
-        "dashboard",
-        "alpha",
-      },
       sync_root_with_cwd = true,
       diagnostics = {
         enable = true,

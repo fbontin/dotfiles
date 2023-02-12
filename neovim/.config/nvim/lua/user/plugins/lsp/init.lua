@@ -27,7 +27,7 @@ return {
 
     mason_lspconfig.setup({
       ensure_installed = {
-        "sumneko_lua",
+        "lua_ls",
         "cssls",
         "html",
         "tsserver",
@@ -40,8 +40,8 @@ return {
       function(server_name)
         lspconfig[server_name].setup(opts)
       end,
-      ["sumneko_lua"] = function()
-        lspconfig.sumneko_lua.setup(vim.tbl_deep_extend("force", {
+      ["lua_ls"] = function()
+        lspconfig.lua_ls.setup(vim.tbl_deep_extend("force", {
           settings = {
             Lua = {
               diagnostics = { globals = { "vim" } },
