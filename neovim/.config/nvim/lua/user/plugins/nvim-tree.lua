@@ -1,5 +1,6 @@
 return {
   "nvim-tree/nvim-tree.lua",
+  commit = "8b8d457",
   dependencies = {
     "nvim-tree/nvim-web-devicons", -- optional, for file icons
   },
