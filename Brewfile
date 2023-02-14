@@ -10,6 +10,9 @@ brew "bat"
 brew "neovim" 
 brew "stow"
 
+# file manager for console
+brew "ranger"
+
 # zsh
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
