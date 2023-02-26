@@ -1,6 +1,6 @@
 return {
   "echasnovski/mini.nvim",
-  event = "BufEnter",
+  event = "VeryLazy",
   dependencies = { "JoosepAlviste/nvim-ts-context-commentstring", lazy = true },
   config = function()
     require("mini.pairs").setup()
@@ -12,5 +12,7 @@ return {
         end,
       },
     })
+   require("mini.tabline").setup();
+   require("mini.bufremove").setup();
   end,
 }
