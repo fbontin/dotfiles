@@ -9,7 +9,9 @@ autoload -Uz compinit && compinit
 
 # Theme
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+
 # Suggestions 
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#888888"
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # "Fuzzy" cd
 zstyle ':completion:*' matcher-list 'r:[[:ascii:]]||[[:ascii:]]=** r:|=* m:{a-z\-}={A-Z\_}'
