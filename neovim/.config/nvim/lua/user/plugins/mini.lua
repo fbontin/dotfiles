@@ -12,7 +12,7 @@ return {
         end,
       },
     })
-   require("mini.tabline").setup();
    require("mini.bufremove").setup();
+   require("mini.tabline").setup();
   end,
 }
