@@ -5,12 +5,6 @@ return {
   },
   event = "VeryLazy",
   config = function()
-    require("bufferline").setup({
-      options = {
-        indicator = {
-          style = "underline",
-        },
-      },
-    })
+    require("bufferline").setup()
   end,
 }
