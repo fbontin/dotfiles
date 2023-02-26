@@ -1,3 +1,6 @@
+local WIDTH_RATIO = 0.8
+local HEIGHT_RATIO = 0.8
+
 return {
   "nvim-tree/nvim-tree.lua",
   dependencies = {
@@ -9,46 +12,32 @@ return {
       sync_root_with_cwd = true,
       diagnostics = {
         enable = true,
-        icons = {
-          hint = "",
-          info = "",
-          warning = "",
-          error = "",
-        },
-      },
-      update_focused_file = {
-        enable = true,
-        update_cwd = true,
-        ignore_list = {},
       },
       view = {
-        width = 40,
-      },
-      renderer = {
-        highlight_git = true,
-        root_folder_label = ":t",
-        icons = {
-          glyphs = {
-            default = "",
-            symlink = "",
-            git = {
-              unstaged = "",
-              staged = "S",
-              unmerged = "",
-              renamed = "➜",
-              deleted = "",
-              untracked = "U",
-              ignored = "◌",
-            },
-            folder = {
-              default = "",
-              open = "",
-              empty = "",
-              empty_open = "",
-              symlink = "",
-            },
-          },
+        float = {
+          enable = true,
+          open_win_config = function()
+            local screen_w = vim.opt.columns:get()
+            local screen_h = vim.opt.lines:get() - vim.opt.cmdheight:get()
+            local window_w = screen_w * WIDTH_RATIO
+            local window_h = screen_h * HEIGHT_RATIO
+            local window_w_int = math.floor(window_w)
+            local window_h_int = math.floor(window_h)
+            local center_x = (screen_w - window_w) / 2
+            local center_y = ((vim.opt.lines:get() - window_h) / 2) - vim.opt.cmdheight:get()
+            return {
+              border = "rounded",
+              relative = "editor",
+              row = center_y,
+              col = center_x,
+              width = window_w_int,
+              height = window_h_int,
+            }
+          end,
         },
+        width = function()
+          return math.floor(vim.opt.columns:get() * WIDTH_RATIO)
+        end,
       },
     })
   end,

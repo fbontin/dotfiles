@@ -10,7 +10,6 @@ return {
         indicator = {
           style = "underline",
         },
-        offsets = { { filetype = "NvimTree", text = "", padding = 1 } },
       },
     })
   end,
