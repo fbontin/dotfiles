@@ -4,19 +4,12 @@ return {
   config = function()
     local alpha = require("alpha")
     local dashboard = require("alpha.themes.dashboard")
-    require("alpha.term")
 
     local header = {
-      type = "terminal",
-      command = "cat | " .. os.getenv("HOME") .. "/.config/nvim/lua/user/alpha/starry_night.sh",
-      width = 64,
-      height = 20,
-      opts = {
-        position = "center",
-        hl = "String",
-      },
+      type = "text",
+      val = "(◕ᴥ◕)",
+      opts = { position = "center" },
     }
-
     local buttons = {
       type = "group",
       val = {
@@ -30,13 +23,10 @@ return {
       },
     }
 
-    local top_padding = vim.fn.max({ 2, vim.fn.floor(vim.fn.winheight(0) * 0.2) })
-
     local config = {
       layout = {
-        { type = "padding", val = top_padding },
+        { type = "padding", val = 2 },
         header,
-        { type = "padding", val = 14 },
         { type = "padding", val = 2 },
         buttons,
       },
