@@ -12,6 +12,7 @@ darkmode() {
   # then read what current/new is
   CURR_MODE=$(dark_or_light_mode)
 
+  # then set theme in kitty
   if [ "$CURR_MODE" = "Light" ]; then
     echo "Setting light"
     kitty @ set-colors -a -c "$HOME/.config/kitty/solarized-light-theme.conf"
