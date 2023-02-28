@@ -13,6 +13,9 @@ return {
       diagnostics = {
         enable = true,
       },
+      update_focused_file = {
+        enable = true,
+      },
       view = {
         float = {
           enable = true,
