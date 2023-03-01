@@ -14,3 +14,6 @@ Make sure you're inside ~/.dotfiles
 
 ```make stow```
 
+### Ranger
+
+- To open a terminal in the current directory, press `shift+s`.
