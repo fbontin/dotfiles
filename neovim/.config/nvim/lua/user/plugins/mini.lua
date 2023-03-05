@@ -17,7 +17,6 @@ return {
     require("mini.bracketed").setup()
 
     -- for bracketed, to use ö and ä instead of brackets
-    vim.api.nvim_set_keymap("n", "ö", "[", { silent = true })
-    vim.api.nvim_set_keymap("n", "ä", "]", { silent = true })
+    vim.o.langmap = "ö[,ä]"
   end,
 }
