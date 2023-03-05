@@ -14,6 +14,7 @@ return {
     })
     require("mini.bufremove").setup()
     require("mini.bracketed").setup()
+    require("mini.surround").setup()
 
     -- for bracketed, to use ö and ä instead of brackets
     vim.o.langmap = "ö[,ä]"
