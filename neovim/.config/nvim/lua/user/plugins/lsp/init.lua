@@ -32,6 +32,7 @@ return {
         "cssls",
         "html",
         "tsserver",
+        "volar", -- ("vue-language-server")
         "bashls",
         "jsonls",
         "yamlls",
