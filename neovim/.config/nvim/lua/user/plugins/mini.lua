@@ -13,7 +13,6 @@ return {
       },
     })
     require("mini.bufremove").setup()
-    require("mini.tabline").setup()
     require("mini.bracketed").setup()
 
     -- for bracketed, to use ö and ä instead of brackets
