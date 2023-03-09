@@ -17,6 +17,7 @@ return {
     require("mini.surround").setup()
 
     -- for bracketed, to use ö and ä instead of brackets
-    vim.o.langmap = "ö[,ä]"
+    vim.keymap.set("n", "ö", "[", { remap = true })
+    vim.keymap.set("n", "ä", "]", { remap = true })
   end,
 }
