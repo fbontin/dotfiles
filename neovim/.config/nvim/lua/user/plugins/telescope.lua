@@ -12,5 +12,12 @@ return {
         path_display = { "smart" },
       },
     })
+
+    vim.keymap.set(
+      "n",
+      "<leader>p",
+      "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>"
+    )
+    vim.keymap.set("n", "<leader>f", "<cmd>Telescope live_grep<cr>")
   end,
 }
