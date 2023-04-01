@@ -1,7 +1,10 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   run = ":TSUpdate",
-  dependencies = { "p00f/nvim-ts-rainbow" },
+  dependencies = {
+    "p00f/nvim-ts-rainbow",
+    "nvim-treesitter/nvim-treesitter-context",
+  },
   event = "VeryLazy",
   config = function()
     require("nvim-treesitter.configs").setup({
@@ -34,10 +37,12 @@ return {
         extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
         max_file_lines = nil, -- Do not enable for files with more than n lines, int
       },
-      context_commentstring = { -- needed for nvim-ts-context-commentstring
+      context_commentstring = {
+        -- needed for nvim-ts-context-commentstring
         enable = true,
         enable_autocmd = false,
       },
     })
+    require("treesitter-context").setup()
   end,
 }
