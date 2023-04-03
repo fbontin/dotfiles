@@ -33,6 +33,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Alstom
 export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
+source $HOME/repos/alstom/env.zsh
 
 # --- ADD-ONS ---
 
