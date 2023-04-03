@@ -3,8 +3,8 @@ alias gp="git push"
 alias gco="git checkout"
 alias megaprune="git fetch && git remote update origin --prune && git branch -vv | grep ': gone]' | cut -f 3 -d ' ' | xargs git branch -D"
 
-# Ordna/Kompis
-alias kompis="cd /Users/filipbontin/repos/ordna/CBF-RE-IPEX-KOMPIS"
+# Alstom
+alias alstom="cd /Users/filipbontin/repos/alstom"
 
 # Exa
 alias ls="exa -ah --icons"
