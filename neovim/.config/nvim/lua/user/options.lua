@@ -35,7 +35,9 @@ vim.opt.sidescrolloff = 8
 vim.opt.guifont = "Jetbrains Mono:h10" -- the font used in graphical neovim applications
 
 -- Folding
-vim.opt.foldmethod = "syntax" -- allow folding by syntax
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldenable = false
 vim.opt.foldlevelstart = 99 -- open files with all folds open
 
 vim.opt.shortmess:append("c")
