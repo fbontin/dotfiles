@@ -23,6 +23,7 @@ return {
         "rust",
         "tsx",
         "typescript",
+        "vue",
         "yaml",
       },
       sync_install = false,
