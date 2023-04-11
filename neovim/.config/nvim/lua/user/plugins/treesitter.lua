@@ -8,25 +8,8 @@ return {
   event = "VeryLazy",
   config = function()
     require("nvim-treesitter.configs").setup({
-      ensure_installed = {
-        "lua",
-        "css",
-        "gitignore",
-        "http",
-        "javascript",
-        "jsdoc",
-        "json",
-        "make",
-        "markdown",
-        "python",
-        "regex",
-        "rust",
-        "tsx",
-        "typescript",
-        "vue",
-        "yaml",
-      },
-      sync_install = false,
+      ensure_installed = {},
+      auto_install = true,
       autopairs = { enable = true },
       highlight = {
         enable = true, -- false will disable the whole extension
