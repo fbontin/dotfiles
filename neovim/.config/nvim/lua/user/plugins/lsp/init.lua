@@ -6,7 +6,7 @@ return {
     "jose-elias-alvarez/typescript.nvim", -- for ts commands
   },
   event = "VeryLazy",
-  config = function()
+  config = function(_, opts)
     local lspconfig = require("lspconfig")
     local mason_lspconfig = require("mason-lspconfig")
     local cmp_nvim_lsp = require("cmp_nvim_lsp")
@@ -15,11 +15,13 @@ return {
     local lsp_keymaps = require("user.plugins.lsp.keymaps")
     local lsp_highlight_document = require("user.plugins.lsp.highlight_document")
 
-    local opts = {
+    local options = {
       on_attach = function(client, bufnr)
         if client.name == "tsserver" then
           client.server_capabilities.document_formatting = false
         end
+        require("user.plugins.lsp.format").autoformat = opts.autoformat
+        require("user.plugins.lsp.format").on_attach(client, bufnr)
         lsp_keymaps(bufnr)
         lsp_highlight_document(client)
       end,
@@ -40,7 +42,7 @@ return {
     })
     mason_lspconfig.setup_handlers({
       function(server_name)
-        lspconfig[server_name].setup(opts)
+        lspconfig[server_name].setup(options)
       end,
       ["lua_ls"] = function()
         lspconfig.lua_ls.setup(vim.tbl_deep_extend("force", {
@@ -55,10 +57,10 @@ return {
               },
             },
           },
-        }, opts))
+        }, options))
       end,
     })
 
-    require("typescript").setup({ server = opts })
+    require("typescript").setup({ server = options })
   end,
 }

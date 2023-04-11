@@ -1,6 +1,7 @@
 return {
   "jose-elias-alvarez/null-ls.nvim", -- for formatters and linters
   event = "VeryLazy",
+  enabled = false,
   config = function()
     local null_ls = require("null-ls")
     null_ls.setup({
