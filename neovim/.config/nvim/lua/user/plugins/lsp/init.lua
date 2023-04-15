@@ -2,18 +2,23 @@ return {
   -- LSP
   "neovim/nvim-lspconfig", -- enable LSP
   dependencies = {
+    "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "jose-elias-alvarez/typescript.nvim", -- for ts commands
   },
   event = "VeryLazy",
   config = function(_, opts)
     local lspconfig = require("lspconfig")
+    local mason = require("mason")
     local mason_lspconfig = require("mason-lspconfig")
     local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
     require("user.plugins.lsp.config")
     local lsp_keymaps = require("user.plugins.lsp.keymaps")
     local lsp_highlight_document = require("user.plugins.lsp.highlight_document")
+
+    mason.setup({ ui = { icons = { package_installed = "✓", package_pending = "➜", package_uninstalled = "✗" } } })
+
 
     local options = {
       on_attach = function(client, bufnr)
