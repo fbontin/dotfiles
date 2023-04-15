@@ -2,15 +2,6 @@ local M = {}
 
 M.autoformat = true
 
-function M.toggle()
-  if vim.b.autoformat == false then
-    vim.b.autoformat = nil
-    M.autoformat = true
-  else
-    M.autoformat = not M.autoformat
-  end
-end
-
 function M.format()
   local buf = vim.api.nvim_get_current_buf()
   if vim.b.autoformat == false then
