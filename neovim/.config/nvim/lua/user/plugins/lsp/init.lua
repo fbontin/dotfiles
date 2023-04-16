@@ -25,7 +25,6 @@ return {
         if client.name == "tsserver" then
           client.server_capabilities.document_formatting = false
         end
-        require("user.plugins.lsp.format").autoformat = opts.autoformat
         require("user.plugins.lsp.format").on_attach(client, bufnr)
         lsp_keymaps(bufnr)
         lsp_highlight_document(client)
@@ -43,6 +42,7 @@ return {
         "bashls",
         "jsonls",
         "yamlls",
+        "eslint",
       },
     })
     mason_lspconfig.setup_handlers({
@@ -64,6 +64,10 @@ return {
           },
         }, options))
       end,
+      ['volar'] = function()
+        require("user.plugins.lsp.format").autoformat = false
+        lspconfig.volar.setup(options)
+      end
     })
 
     require("typescript").setup({ server = options })

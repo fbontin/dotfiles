@@ -7,6 +7,9 @@ function M.format()
   if vim.b.autoformat == false then
     return
   end
+  if M.autoformat == false then
+    return
+  end
   vim.lsp.buf.format(vim.tbl_deep_extend("force", { bufnr = buf }, {}))
 end
 
@@ -18,6 +21,13 @@ function M.on_attach(client, buf)
       and client.config.capabilities.documentFormattingProvider == false
   then
     return
+  end
+
+  if client.name == 'eslint' then
+    vim.api.nvim_create_autocmd("BufWritePre", {
+      buffer = buf,
+      command = "EslintFixAll",
+    })
   end
 
   if client.supports_method("textDocument/formatting") then
