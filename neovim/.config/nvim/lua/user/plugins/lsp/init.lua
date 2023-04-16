@@ -15,7 +15,6 @@ return {
 
     require("user.plugins.lsp.config")
     local lsp_keymaps = require("user.plugins.lsp.keymaps")
-    local lsp_highlight_document = require("user.plugins.lsp.highlight_document")
 
     mason.setup({ ui = { icons = { package_installed = "✓", package_pending = "➜", package_uninstalled = "✗" } } })
 
@@ -27,7 +26,6 @@ return {
         end
         require("user.plugins.lsp.format").on_attach(client, bufnr)
         lsp_keymaps(bufnr)
-        lsp_highlight_document(client)
       end,
       capabilities = cmp_nvim_lsp.default_capabilities(vim.lsp.protocol.make_client_capabilities()),
     }
