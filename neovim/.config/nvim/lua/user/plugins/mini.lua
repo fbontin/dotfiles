@@ -13,11 +13,6 @@ return {
       },
     })
     require("mini.bufremove").setup()
-    require("mini.bracketed").setup()
     require("mini.surround").setup()
-
-    -- for bracketed, to use ö and ä instead of brackets
-    vim.keymap.set("n", "ö", "[", { remap = true })
-    vim.keymap.set("n", "ä", "]", { remap = true })
   end,
 }
