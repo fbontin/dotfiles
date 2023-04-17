@@ -32,7 +32,6 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # Alstom
-export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
 source $HOME/repos/alstom/env.zsh
 
 # --- ADD-ONS ---
