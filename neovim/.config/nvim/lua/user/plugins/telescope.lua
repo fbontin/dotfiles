@@ -16,7 +16,8 @@ return {
     })
     telescope.load_extension("live_grep_args")
 
-    vim.keymap.set("n", "<leader>p", "<cmd>lua require'telescope.builtin'.find_files({ hidden = true, previewer = false })<cr>")
+    vim.keymap.set("n", "<leader>p",
+      "<cmd>lua require'telescope.builtin'.find_files({ hidden = true, previewer = false })<cr>")
     vim.keymap.set("n", "<leader>f", "<cmd>Telescope live_grep_args<cr>")
     vim.keymap.set("n", "<leader>r", "<cmd>Telescope oldfiles<cr>")
   end,
