@@ -48,6 +48,7 @@ return {
         lspconfig[server_name].setup(options)
       end,
       ["lua_ls"] = function()
+        require("user.plugins.lsp.format").autoformat = true
         lspconfig.lua_ls.setup(vim.tbl_deep_extend("force", {
           settings = {
             Lua = {
