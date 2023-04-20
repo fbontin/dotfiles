@@ -26,6 +26,9 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- Remove highlights
 keymap("n", "<Esc>", ":nohl<cr>", opts)
 
+-- Copy filepath of current buffer
+keymap('n', "<leader>y", "<cmd>call setreg('+', expand('%'))<cr>", opts)
+
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
