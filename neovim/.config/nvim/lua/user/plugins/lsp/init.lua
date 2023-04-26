@@ -5,6 +5,7 @@ return {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "jose-elias-alvarez/typescript.nvim", -- for ts commands
+    "b0o/schemastore.nvim",
   },
   event = { "BufReadPre", "BufNewFile" },
   config = function(_, opts)
@@ -66,6 +67,21 @@ return {
       ['volar'] = function()
         require("user.plugins.lsp.format").autoformat = false
         lspconfig.volar.setup(options)
+      end,
+      ['jsonls'] = function ()
+        lspconfig.jsonls.setup(vim.tbl_deep_extend("force", {
+          settings = {
+            json = {
+              schemas = require('schemastore').json.schemas(),
+              validate = { enable = true },
+              select = {
+                '.eslintrc',
+                'package.json',
+                'tsconfig.json',
+              },
+            },
+          },
+        }, options))
       end
     })
 
