@@ -45,5 +45,6 @@ return {
     })
 
     vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>")
+    vim.keymap.set("n", "<Esc>", ":NvimTreeClose<cr>")
   end,
 }
