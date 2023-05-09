@@ -13,11 +13,6 @@ return {
         prompt_prefix = " ",
         selection_caret = " ",
         path_display = { "smart" },
-        mappings = {
-          i = {
-            ['<C-q>'] = actions.send_selected_to_qflist + actions.open_qflist
-          }
-        }
       },
     })
     telescope.load_extension("live_grep_args")
