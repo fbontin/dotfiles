@@ -13,6 +13,9 @@ brew "stow"
 # file manager for console
 brew "ranger"
 
+# tmux
+brew "tmux"
+
 # zsh
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
