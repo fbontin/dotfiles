@@ -15,6 +15,7 @@ brew "ranger"
 
 # tmux
 brew "tmux"
+brew "tmuxinator"
 
 # zsh
 brew "zsh-autosuggestions"
