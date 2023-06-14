@@ -9,6 +9,9 @@ alias ls="exa -ah --icons"
 # Cat/bat
 alias cat="bat"
 
+# tmux
+alias mux="tmuxinator"
+
 # cd
 alias ..="cd .."
 alias ...="cd ../.."
