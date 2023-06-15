@@ -22,5 +22,6 @@ return {
     vim.keymap.set("n", "<leader>f", "<cmd>Telescope live_grep_args<cr>")
     vim.keymap.set("n", "<leader>r", "<cmd>Telescope oldfiles<cr>")
     vim.keymap.set("n", "<leader>s", "<cmd>Telescope git_status<cr>")
+    vim.keymap.set("n", "<leader>a", "<cmd>Telescope resume<cr>")
   end,
 }
