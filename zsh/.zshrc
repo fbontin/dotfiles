@@ -36,6 +36,9 @@ export NVM_DIR="$HOME/.nvm"
 # Alstom
 source $HOME/repos/alstom/env.zsh
 
+# Notes
+source $HOME/repos/personal/notes/scripts/env.zsh
+
 # --- ADD-ONS ---
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
