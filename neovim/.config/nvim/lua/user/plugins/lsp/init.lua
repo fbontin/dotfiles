@@ -12,8 +12,6 @@ return {
     local lspconfig = require("lspconfig")
     local mason = require("mason")
     local mason_lspconfig = require("mason-lspconfig")
-
-    require("user.plugins.lsp.config")
     local server = require("user.plugins.lsp.server")
 
     mason.setup({ ui = { icons = { package_installed = "✓", package_pending = "➜", package_uninstalled = "✗" } } })
