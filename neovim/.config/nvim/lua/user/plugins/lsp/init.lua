@@ -12,23 +12,16 @@ return {
     local lspconfig = require("lspconfig")
     local mason = require("mason")
     local mason_lspconfig = require("mason-lspconfig")
-    local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
     require("user.plugins.lsp.config")
-    local lsp_keymaps = require("user.plugins.lsp.keymaps")
+    local server = require("user.plugins.lsp.server")
 
     mason.setup({ ui = { icons = { package_installed = "✓", package_pending = "➜", package_uninstalled = "✗" } } })
 
 
     local options = {
-      on_attach = function(client, bufnr)
-        if client.name == "tsserver" then
-          client.server_capabilities.document_formatting = false
-        end
-        require("user.plugins.lsp.format").on_attach(client, bufnr)
-        lsp_keymaps(bufnr)
-      end,
-      capabilities = cmp_nvim_lsp.default_capabilities(vim.lsp.protocol.make_client_capabilities()),
+      on_attach = server.on_attach,
+      capabilities = server.capabilities,
     }
 
     mason_lspconfig.setup({
@@ -44,6 +37,7 @@ return {
         "eslint",
       },
     })
+
     mason_lspconfig.setup_handlers({
       function(server_name)
         lspconfig[server_name].setup(options)
@@ -68,7 +62,7 @@ return {
         require("user.plugins.lsp.format").autoformat = false
         lspconfig.volar.setup(options)
       end,
-      ['jsonls'] = function ()
+      ['jsonls'] = function()
         lspconfig.jsonls.setup(vim.tbl_deep_extend("force", {
           settings = {
             json = {
@@ -82,7 +76,7 @@ return {
             },
           },
         }, options))
-      end
+      end,
     })
 
     require("typescript").setup({ server = options })
