@@ -5,6 +5,7 @@ return {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "b0o/schemastore.nvim",
+    "lbrayner/vim-rzip", -- used to read zip files as file systems, e.g. for yarn 3
   },
   event = { "BufReadPre", "BufNewFile" },
   config = function(_, opts)
