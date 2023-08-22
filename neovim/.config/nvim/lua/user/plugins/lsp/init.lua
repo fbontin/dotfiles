@@ -4,7 +4,6 @@ return {
   dependencies = {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
-    "jose-elias-alvarez/typescript.nvim", -- for ts commands
     "b0o/schemastore.nvim",
   },
   event = { "BufReadPre", "BufNewFile" },
@@ -76,7 +75,5 @@ return {
         }, options))
       end,
     })
-
-    require("typescript").setup({ server = options })
   end,
 }
