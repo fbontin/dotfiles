@@ -23,7 +23,7 @@ darkmode() {
 
 set_dark() {
     $(osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true')
-    kitty @ set-colors -a -c "$HOME/.config/kitty/glacier-theme.conf"
+    kitty @ set-colors -a -c "$HOME/.config/kitty/kanagawabones-theme.conf"
 }
 
 set_light() {
