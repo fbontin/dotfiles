@@ -3,7 +3,6 @@ return {
   event = "VeryLazy",
   dependencies = { "JoosepAlviste/nvim-ts-context-commentstring", lazy = true },
   config = function()
-    require("mini.pairs").setup()
     require("mini.statusline").setup()
     require("mini.comment").setup({
       hooks = {
