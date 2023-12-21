@@ -18,6 +18,17 @@ return {
       lsp_zero.default_keymaps({buffer = bufnr})
     end)
 
+    lsp_zero.format_on_save({
+      format_opts = {
+        async = false,
+        timeout_ms = 5000,
+      },
+      servers = {
+        ['rust_analyzer'] = {'rust'},
+        ['elixirls'] = {'elixir'},
+      }
+    })
+
     -- see :help lsp-zero-guide:integrate-with-mason-nvim
     -- to learn how to use mason.nvim with lsp-zero
     require('mason').setup({})
