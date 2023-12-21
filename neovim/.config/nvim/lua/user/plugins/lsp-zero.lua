@@ -31,6 +31,17 @@ return {
       }
     })
 
+    -- CMP --
+    local cmp = require('cmp')
+    local cmp_action = lsp_zero.cmp_action()
+    cmp.setup({
+      mapping = cmp.mapping.preset.insert({
+        ['<CR>'] = cmp.mapping.confirm({ select = true }),
+        ['<Tab>'] = cmp_action.luasnip_supertab(),
+        ['<S-Tab>'] = cmp_action.luasnip_shift_supertab(),
+      }),
+    })
+
     -- LUA --
     local lua_opts = lsp_zero.nvim_lua_ls()
     require('lspconfig').lua_ls.setup(lua_opts)
