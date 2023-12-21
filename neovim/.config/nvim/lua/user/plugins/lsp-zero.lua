@@ -15,20 +15,27 @@ return {
     lsp_zero.on_attach(function(_client, bufnr)
       -- see :help lsp-zero-keybindings
       -- to learn the available actions
-      lsp_zero.default_keymaps({buffer = bufnr})
+      lsp_zero.default_keymaps({ buffer = bufnr })
     end)
 
+    -- FORMAT ON SAVE --
     lsp_zero.format_on_save({
       format_opts = {
         async = false,
         timeout_ms = 5000,
       },
       servers = {
-        ['rust_analyzer'] = {'rust'},
-        ['elixirls'] = {'elixir'},
+        ['rust_analyzer'] = { 'rust' },
+        ['elixirls'] = { 'elixir' },
+        ['lua_ls'] = { 'lua' },
       }
     })
 
+    -- LUA --
+    local lua_opts = lsp_zero.nvim_lua_ls()
+    require('lspconfig').lua_ls.setup(lua_opts)
+
+    -- MASON --
     -- see :help lsp-zero-guide:integrate-with-mason-nvim
     -- to learn how to use mason.nvim with lsp-zero
     require('mason').setup({})
