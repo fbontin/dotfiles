@@ -17,19 +17,6 @@ return {
       lsp_zero.default_keymaps({ buffer = bufnr })
     end)
 
-    -- FORMAT ON SAVE --
-    lsp_zero.format_on_save({
-      format_opts = {
-        async = false,
-        timeout_ms = 5000,
-      },
-      servers = {
-        ['rust_analyzer'] = { 'rust' },
-        ['elixirls'] = { 'elixir' },
-        ['lua_ls'] = { 'lua' },
-      }
-    })
-
     -- CMP --
     local cmp = require('cmp')
     local cmp_action = lsp_zero.cmp_action()
