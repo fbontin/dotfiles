@@ -1,7 +1,10 @@
 return {
   "echasnovski/mini.nvim",
   event = "VeryLazy",
-  dependencies = { "JoosepAlviste/nvim-ts-context-commentstring", lazy = true },
+  dependencies = {
+    "JoosepAlviste/nvim-ts-context-commentstring",
+    "nvim-tree/nvim-web-devicons", -- optional, for file icons
+  },
   config = function()
     require("mini.statusline").setup()
     require("mini.comment").setup({
@@ -13,5 +16,8 @@ return {
     })
     require("mini.bufremove").setup()
     require("mini.surround").setup()
+    require("mini.files").setup()
+
+    vim.keymap.set("n", "<leader>e", ":lua MiniFiles.open()<cr>")
   end,
 }
