@@ -18,6 +18,6 @@ return {
     require("mini.surround").setup()
     require("mini.files").setup()
 
-    vim.keymap.set("n", "<leader>e", ":lua MiniFiles.open()<cr>")
+    vim.keymap.set("n", "<leader>e", "<cmd>lua MiniFiles.open()<cr>")
   end,
 }
