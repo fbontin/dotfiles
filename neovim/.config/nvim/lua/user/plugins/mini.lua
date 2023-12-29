@@ -18,6 +18,7 @@ return {
     require("mini.surround").setup()
     require("mini.files").setup()
 
-    vim.keymap.set("n", "<leader>e", "<cmd>lua MiniFiles.open()<cr>")
+    -- Open file explorer on current file path
+    vim.keymap.set("n", "<leader>e", "<cmd>lua MiniFiles.open(vim.api.nvim_buf_get_name(0)) <cr>")
   end,
 }
