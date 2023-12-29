@@ -42,12 +42,3 @@ vim.opt.shortmess:append("c")
 
 vim.cmd("set whichwrap+=<,>,[,],h,l")
 vim.cmd("set iskeyword+=-")
-
--- Set tab title to "nvim [dir]"
-local cwd = vim.fn.getcwd()
-local dir
-for s in string.gmatch(cwd, "[%a-]+") do
-  dir = s
-end
-vim.opt.title = true
-vim.opt.titlestring = "nvim " .. dir
