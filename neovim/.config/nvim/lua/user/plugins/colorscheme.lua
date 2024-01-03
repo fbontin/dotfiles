@@ -16,6 +16,8 @@ return {
           transparent = true,
           on_colors = function(colors)
             colors.comment = "#bbbbbb"
+            vim.api.nvim_set_hl(0, 'LineNrAbove', { fg = '#999999', bold = true })
+            vim.api.nvim_set_hl(0, 'LineNrBelow', { fg = '#999999', bold = true })
           end
         })
         vim.api.nvim_set_option("background", "dark")
