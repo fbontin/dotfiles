@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/cask-fonts": {
-        "revision": "2ffb58600554a5984a3d06439418a7c494a482fb"
+        "revision": "2f33ec6dbf42a51304deb26a1693987912412f32"
       }
     },
     "cask": {
@@ -13,7 +13,7 @@
         }
       },
       "kitty": {
-        "version": "0.32.2",
+        "version": "0.33.0",
         "options": {
           "full_name": "kitty"
         }
