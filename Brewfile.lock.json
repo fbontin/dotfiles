@@ -13,7 +13,7 @@
         }
       },
       "kitty": {
-        "version": "0.33.0",
+        "version": "0.33.1",
         "options": {
           "full_name": "kitty"
         }
@@ -727,7 +727,7 @@
         "macOS": "13.6"
       },
       "sonoma": {
-        "HOMEBREW_VERSION": "4.2.12",
+        "HOMEBREW_VERSION": "4.2.14",
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "15.1.0.0.1.1700200546",
