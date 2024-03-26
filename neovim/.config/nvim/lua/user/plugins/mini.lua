@@ -18,6 +18,8 @@ return {
     require("mini.surround").setup()
     require("mini.files").setup()
     require("mini.pairs").setup()
+    require("mini.indentscope").setup()
+    require("mini.animate").setup({ scroll = { enable = false } })
 
     -- Open file explorer on current file path
     vim.keymap.set("n", "<leader>e", "<cmd>lua MiniFiles.open(vim.api.nvim_buf_get_name(0)) <cr>")
