@@ -35,12 +35,12 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<S-q>", ":bdelete!<CR>", opts)
 
 -- Center ctrl+d and ctrl-u vertically
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
+keymap("n", "<C-d>", "<C-d>zz", opts)
+keymap("n", "<C-u>", "<C-u>zz", opts)
 
 -- Center searches (after going to next)
-vim.keymap.set("n", "n", "nzzzv")
-vim.keymap.set("n", "N", "Nzzzv")
+keymap("n", "n", "nzzzv", opts)
+keymap("n", "N", "Nzzzv", opts)
 
 -- Visual --
 -- Stay in indent mode
