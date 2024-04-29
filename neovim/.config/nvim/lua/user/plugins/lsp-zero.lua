@@ -36,9 +36,20 @@ return {
       }),
     })
 
+    local lspconfig = require('lspconfig');
     -- LUA --
     local lua_opts = lsp_zero.nvim_lua_ls()
-    require('lspconfig').lua_ls.setup(lua_opts)
+    lspconfig.lua_ls.setup(lua_opts)
+
+    -- VUE --
+    lspconfig.volar.setup {
+      filetypes = { 'typescript', 'javascript', 'vue' },
+      init_options = {
+        vue = {
+          hybridMode = false,
+        },
+      },
+    }
 
 
     -- MASON --
