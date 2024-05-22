@@ -20,11 +20,11 @@ return {
             vim.api.nvim_set_hl(0, 'LineNrBelow', { fg = '#999999', bold = true })
           end
         })
-        vim.api.nvim_set_option("background", "dark")
+        vim.api.nvim_set_option_value("background", "dark", {})
         vim.cmd("colorscheme tokyonight")
       end,
       set_light_mode = function()
-        vim.api.nvim_set_option("background", "light")
+        vim.api.nvim_set_option_value("background", "light", {})
         vim.cmd("colorscheme everforest")
       end,
     })
