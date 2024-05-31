@@ -13,13 +13,13 @@
         }
       },
       "kitty": {
-        "version": "0.34.1",
+        "version": "0.35.0",
         "options": {
           "full_name": "kitty"
         }
       },
       "amethyst": {
-        "version": "0.21.0",
+        "version": "0.21.1",
         "options": {
           "full_name": "amethyst"
         }
@@ -687,7 +687,7 @@
         "macOS": "13.6"
       },
       "sonoma": {
-        "HOMEBREW_VERSION": "4.3.1",
+        "HOMEBREW_VERSION": "4.3.2",
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "15.3.0.0.1.1708646388",
