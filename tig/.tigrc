@@ -1,1 +1,3 @@
 bind status d @sh -c "rm '%(file)'" # remove current file in status view
+bind refs y @sh -c "echo %(ref) | pbcopy" # copy current branch name in refs view
+
