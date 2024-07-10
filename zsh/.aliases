@@ -16,6 +16,7 @@ alias mux="tmuxinator"
 # cd
 alias ..="cd .."
 alias ...="cd ../.."
+alias ....="cd ../../.."
 
 # neovim
 alias vi="nvim"
