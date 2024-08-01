@@ -34,10 +34,10 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # Alstom
-source $HOME/repos/alstom/env.zsh
+[ ! -f $HOME/repos/alstom/env.zsh ] || $HOME/repos/alstom/env.zsh
 
 # Notes
-source $HOME/repos/personal/notes/scripts/env.zsh
+[ ! -f $HOME/repos/personal/notes/scripts/env.zsh ] || $HOME/repos/personal/notes/scripts/env.zsh
 
 # --- ADD-ONS ---
 
