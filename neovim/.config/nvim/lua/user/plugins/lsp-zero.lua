@@ -48,6 +48,9 @@ return {
         vue = {
           hybridMode = false,
         },
+        typescript = {
+          tsdk = './.yarn/sdks/typescript/lib/' -- Yarn PnP
+        }
       },
     }
 
