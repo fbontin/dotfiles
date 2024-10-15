@@ -9,6 +9,7 @@ brew "exa"
 brew "bat"
 brew "neovim" 
 brew "stow"
+brew "fish"
 
 # file manager for console
 brew "ranger"
