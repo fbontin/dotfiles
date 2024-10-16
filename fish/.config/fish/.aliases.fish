@@ -1,0 +1,22 @@
+# git
+alias gp="git push"
+alias gco="git checkout"
+alias megaprune="git fetch && git remote update origin --prune && git branch -vv | grep ': gone]' | cut -f 3 -d ' ' | xargs git branch -D"
+alias mgp="megaprune"
+
+# Exa
+alias ls="exa -ah --icons"
+
+# Cat/bat
+alias cat="bat"
+
+# tmux
+alias mux="tmuxinator"
+
+# cd
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+# neovim
+alias vi="nvim"

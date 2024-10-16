@@ -1,1 +1,2 @@
-# TODO: add config
+source $HOME/.config/fish/.aliases.fish
+
