@@ -9,7 +9,6 @@ brew "exa"
 brew "bat"
 brew "neovim" 
 brew "stow"
-brew "fish"
 
 # file manager for console
 brew "ranger"
@@ -25,6 +24,10 @@ brew "zsh-syntax-highlighting"
 # used by telescope in nvim
 brew "ripgrep" 
 brew "fd"
+
+# fish
+brew "fish"
+brew "fisher"
 
 # used for formatting lua
 brew "stylua"

@@ -659,6 +659,20 @@
             }
           }
         }
+      },
+      "fisher": {
+        "version": "4.4.5",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "all": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/fisher/blobs/sha256:14891cea79eaaec8482f370961e6950b16ceed386c7f26567cb5c1f37f42434c",
+              "sha256": "14891cea79eaaec8482f370961e6950b16ceed386c7f26567cb5c1f37f42434c"
+            }
+          }
+        }
       }
     }
   },
