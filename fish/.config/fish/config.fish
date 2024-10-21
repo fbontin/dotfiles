@@ -12,5 +12,4 @@ export EDITOR="nvim"
 source $HOME/repos/alstom/env.fish
 
 # Notes
-# source $HOME/repos/personal/notes/scripts/env.fish
-
+source $HOME/repos/personal/notes/scripts/no.fish
