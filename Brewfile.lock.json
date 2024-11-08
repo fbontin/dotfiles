@@ -13,7 +13,7 @@
         }
       },
       "kitty": {
-        "version": "0.36.4",
+        "version": "0.37.0",
         "options": {
           "full_name": "kitty"
         }
@@ -520,40 +520,40 @@
         }
       },
       "ranger": {
-        "version": "1.9.3_2",
+        "version": "1.9.4",
         "bottle": {
-          "rebuild": 4,
+          "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
           "files": {
             "arm64_sequoia": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/ranger/blobs/sha256:29f94668e81c45db4b87f46d183450c306196f58315d34c948090d87552d81a0",
-              "sha256": "29f94668e81c45db4b87f46d183450c306196f58315d34c948090d87552d81a0"
+              "url": "https://ghcr.io/v2/homebrew/core/ranger/blobs/sha256:97ec1aa9eb07127348df0acbbe74ee70530e3c42b2b34b318d275a5b939b108c",
+              "sha256": "97ec1aa9eb07127348df0acbbe74ee70530e3c42b2b34b318d275a5b939b108c"
             },
             "arm64_sonoma": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/ranger/blobs/sha256:29f94668e81c45db4b87f46d183450c306196f58315d34c948090d87552d81a0",
-              "sha256": "29f94668e81c45db4b87f46d183450c306196f58315d34c948090d87552d81a0"
+              "url": "https://ghcr.io/v2/homebrew/core/ranger/blobs/sha256:97ec1aa9eb07127348df0acbbe74ee70530e3c42b2b34b318d275a5b939b108c",
+              "sha256": "97ec1aa9eb07127348df0acbbe74ee70530e3c42b2b34b318d275a5b939b108c"
             },
             "arm64_ventura": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/ranger/blobs/sha256:29f94668e81c45db4b87f46d183450c306196f58315d34c948090d87552d81a0",
-              "sha256": "29f94668e81c45db4b87f46d183450c306196f58315d34c948090d87552d81a0"
+              "url": "https://ghcr.io/v2/homebrew/core/ranger/blobs/sha256:97ec1aa9eb07127348df0acbbe74ee70530e3c42b2b34b318d275a5b939b108c",
+              "sha256": "97ec1aa9eb07127348df0acbbe74ee70530e3c42b2b34b318d275a5b939b108c"
             },
             "sonoma": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/ranger/blobs/sha256:c4a0c957609a0dbc3c20f6bb0e420d1166bb65de6c205acca14ee85c880b68da",
-              "sha256": "c4a0c957609a0dbc3c20f6bb0e420d1166bb65de6c205acca14ee85c880b68da"
+              "url": "https://ghcr.io/v2/homebrew/core/ranger/blobs/sha256:9805b7b6198dac4993bf90919395a37d7e26dea6c1a059c87a82f30c56b915af",
+              "sha256": "9805b7b6198dac4993bf90919395a37d7e26dea6c1a059c87a82f30c56b915af"
             },
             "ventura": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/ranger/blobs/sha256:c4a0c957609a0dbc3c20f6bb0e420d1166bb65de6c205acca14ee85c880b68da",
-              "sha256": "c4a0c957609a0dbc3c20f6bb0e420d1166bb65de6c205acca14ee85c880b68da"
+              "url": "https://ghcr.io/v2/homebrew/core/ranger/blobs/sha256:9805b7b6198dac4993bf90919395a37d7e26dea6c1a059c87a82f30c56b915af",
+              "sha256": "9805b7b6198dac4993bf90919395a37d7e26dea6c1a059c87a82f30c56b915af"
             },
             "x86_64_linux": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/ranger/blobs/sha256:29f94668e81c45db4b87f46d183450c306196f58315d34c948090d87552d81a0",
-              "sha256": "29f94668e81c45db4b87f46d183450c306196f58315d34c948090d87552d81a0"
+              "url": "https://ghcr.io/v2/homebrew/core/ranger/blobs/sha256:97ec1aa9eb07127348df0acbbe74ee70530e3c42b2b34b318d275a5b939b108c",
+              "sha256": "97ec1aa9eb07127348df0acbbe74ee70530e3c42b2b34b318d275a5b939b108c"
             }
           }
         }
@@ -703,7 +703,7 @@
         "macOS": "14.5"
       },
       "sequoia": {
-        "HOMEBREW_VERSION": "4.4.2",
+        "HOMEBREW_VERSION": "4.4.3",
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "16.0.0.0.1.1724870825",
